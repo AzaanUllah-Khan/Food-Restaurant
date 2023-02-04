@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant-About</title>
+  <link rel="icon" href="./igg/Fresh-food-logo-creative-design-vectors-02.webp">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: rgb(255, 231, 231);
+    }
+
+    li {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+    }
+
+    a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10%;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+      margin-top: -55px;
+    }
+
+    .logo {
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      color: white;
+      font-size: 17px;
+    }
+
+    .nav_link {
+      list-style: none;
+    }
+
+    .nav_link li {
+      display: inline-block;
+      padding: 0px 20px;
+    }
+
+    .nav_link li a {
+      transition: all 0.3s ease 0s;
+    }
+
+    .nav_link li a:hover {
+      color: lightblue;
+    }
+
+    .button1 {
+      padding: 9px 25px;
+      background-color: rgba(0, 136, 169, 1);
+      border: none;
+      border-radius: 50px;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+    }
+
+    .button1:hover {
+      background-color: rgba(0, 136, 169, 0.6);
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+      margin-top: 50px;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    .charity {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: rgb(244, 142, 253);
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 30px;
+      transition: all 1s ease 0s;
+    }
+
+    .charity:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p class="logo">My Restuarant</p>
+    <nav>
+      <ul class="nav_link">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./food.html">Food</a></li>
+        <li><a href="./grocery.html">Grocery</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="./contacts.html"><button class="button1">Contact</button></a>
+  </header>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>Our restaurant serves many poor people food for free you can join our charity program by clicking on the button
+    </p>
+    <p><button class="charity">Donate!!</button></p>
+  </div>
+
+  <h1 style="margin: 20px; text-align: center;">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./igg/1011793090InsuranceRepresentative.webp" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>Name of Manager</h2>
+            <p class="title">Business Manager</p>
+            <p>Qualities of manager</p>
+            <p>manger123@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="./igg/sam-walton-9523270-1-402.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Name of Founder</h2>
+            <p class="title">Founder and CEO</p>
+            <p>HIstory about the founder</p>
+            <p>founder890@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="./igg/ChefJorgeNoriega-07-Square.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Name of the chef</h2>
+            <p class="title">Chef</p>
+            <p>Some text that describes chef</p>
+            <p>chef@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

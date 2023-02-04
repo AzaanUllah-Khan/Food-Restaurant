@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant-Grocery</title>
+    <link rel="icon" href="./igg/Fresh-food-logo-creative-design-vectors-02.webp">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(255, 231, 231);
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            margin-top: -150px;
+        }
+
+        .logo {
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: white;
+            font-size: 17px;
+        }
+
+        .nav_link {
+            list-style: none;
+        }
+
+        .nav_link li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav_link li a {
+            transition: all 0.3s ease 0s;
+        }
+
+        .nav_link li a:hover {
+            color: lightblue;
+        }
+
+        .button1 {
+            padding: 9px 25px;
+            background-color: rgba(0, 136, 169, 1);
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            background-color: rgba(0, 136, 169, 0.6);
+        }
+
+        .sh {
+            color: red;
+            font-size: 10px;
+            font-weight: bolder;
+            padding-right: 150px;
+            margin-top: 150px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-left: 50px;
+            visibility: hidden;
+        }
+
+        .coupon {
+            border: 5px solid #bbb;
+            width: 80%;
+            border-radius: 15px;
+            margin: 0 auto;
+            max-width: 600px;
+            margin-top: 30px;
+            transition: all 1s ease 0s;
+        }
+
+        .container {
+            padding: 2px 16px;
+            background-color: #f1f1f1;
+        }
+
+        .promo {
+            background: #ccc;
+            padding: 3px;
+            margin-top: 10px;
+            transition: all 1s ease 0s;
+        }
+
+        .promo:hover {
+            background-color: rgb(145, 140, 140);
+            cursor: pointer;
+        }
+
+        .expire {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .gap {
+            margin-top: 100px;
+        }
+
+        .b {
+            background-color: red;
+            color: white;
+            text-align: center;
+            margin-top: 80px;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="logo">My Restuarant</p>
+        <nav>
+            <ul class="nav_link">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./food.html">Food</a></li>
+                <li><a href="./grocery.html">Grocery</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="./contacts.html"><button class="button1">Contact</button></a>
+    </header>
+    <div class="sh">Deals</div>
+    <div class="coupon">
+        <div class="container">
+            <h2>Cakes</h2>
+        </div>
+        <img src="./igg/download.jpg" alt="Avatar" style="width:100%;">
+        <div class="container" style="background-color:white">
+            <h2><b>20% OFF YOUR PURCHASE</b></h2>
+        </div>
+        <div class="container">
+            <p>Use Promo Code: <span class="promo">Cakes-Discount</span></p>
+            <p class="expire">Expires: Feb 03, 2023</p>
+        </div>
+    </div>
+    <div class="coupon gap">
+        <div class="container">
+            <h2>BBQ</h2>
+        </div>
+        <img src="./igg/download.jpg" alt="Avatar" style="width:100%;">
+        <div class="container" style="background-color:white">
+            <h2><b>20% OFF YOUR PURCHASE</b></h2>
+        </div>
+        <div class="container">
+            <p>Use Promo Code: <span class="promo">BBQ-Discount</span></p>
+            <p class="expire">Expires: Feb 03, 2023</p>
+        </div>
+    </div>
+    <div class="coupon gap">
+        <div class="container">
+            <h2>Cooking Utensils</h2>
+        </div>
+        <img src="./igg/download.jpg" alt="Avatar" style="width:100%;">
+        <div class="container" style="background-color:white">
+            <h2><b>20% OFF YOUR PURCHASE</b></h2>
+        </div>
+        <div class="container">
+            <p>Use Promo Code: <span class="promo">C-U Discount</span></p>
+            <p class="expire">Expires: Feb 03, 2023</p>
+        </div>
+    </div>
+    <div class="coupon gap">
+        <div class="container">
+            <h2>Premium ship</h2>
+        </div>
+        <img src="./igg/download.jpg" alt="Avatar" style="width:100%;">
+        <div class="container" style="background-color:white">
+            <h2><b>20% OFF YOUR PURCHASE</b></h2>
+            <p>By availing this deal you can have discounts on various thing</p>
+        </div>
+        <div class="container">
+            <p>Use Promo Code: <span class="promo">P-S Discount</span></p>
+            <p class="expire">Expires: Feb 03, 2023</p>
+        </div>
+    </div>
+    <div class="b">
+        All Rights Reserved &#174;
+    </div>
+</body>
+
+</html>
